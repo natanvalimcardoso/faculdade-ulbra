@@ -5,10 +5,10 @@ public class App2 {
         double soma = 0;
         
         Scanner s = new Scanner(System.in);
-        System.out.print("Digite quantos segundos: ");
+        System.out.print("Digite quantos segundos: "); //Como dar um escreva, leia.
         double input = s.nextInt();
 
-        soma = ( input * 1100);
+        soma = ( input * 1100); 
         
         System.out.println("A distancia em pes é de: " + soma +" pés" );
         
