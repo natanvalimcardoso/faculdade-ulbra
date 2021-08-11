@@ -30,4 +30,5 @@ public class ex5 {
 
         System.out.println("O valor da " + produto + " é de: " + "R$ " + somaTotal);
     }
-}
+}//finalizado
+
