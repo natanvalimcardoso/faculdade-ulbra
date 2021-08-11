@@ -27,5 +27,4 @@ public class ex3 {
         }
         System.out.println(" A sua nota é: " + media + " E você foi: " + resultado);
     }
-
 }
