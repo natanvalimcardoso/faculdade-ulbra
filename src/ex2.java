@@ -24,7 +24,8 @@ public class ex2 {
 
             Scanner d = new Scanner(System.in);
             System.out.print("Valor 2 venal: ");
-            double input4 = d.nextInt();
+            double input4 = d.nextInt();  //finalizado
+
 
             if (input > input3) {
 
