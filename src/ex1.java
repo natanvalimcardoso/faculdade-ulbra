@@ -5,9 +5,9 @@ public class ex1 {
         
         double soma = 0;
 
-        Scanner s = new Scanner(System.in);
+        Scanner app3 = new Scanner(System.in);
         System.out.print("Valor do produto: ");
-        double input = s.nextInt();
+        double input = app3.nextInt();
 
         Scanner n = new Scanner(System.in);
         System.out.print("Porcentagem de desconto: ");

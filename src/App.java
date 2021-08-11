@@ -4,9 +4,9 @@ public class App {
     public static void main(String[] args) throws Exception {
         double soma = 0;
         
-        Scanner s = new Scanner(System.in);
+        Scanner app1 = new Scanner(System.in);
         System.out.print("Digite quantos segundos: ");
-        double input = s.nextInt();
+        double input = app1.nextInt();
 
         soma = ( input * 1100);
         
