@@ -15,7 +15,8 @@ public class ex3 {
         double prova2 = b.nextInt();
 
         Scanner c = new Scanner(System.in);
-        System.out.print("Nota do trabalho: ");
+        System.out.print("Nota do trabalho: "); //finalizado
+
         double trabalho = c.nextInt();
 
         media = ((prova1 + prova2 + trabalho) / 3);
