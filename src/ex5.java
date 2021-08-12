@@ -16,7 +16,7 @@ public class ex5 {
 
         if (200 > valor && valor >= 50) {
             soma = (valor * 0.05);
-            somaTotal = (valor - soma);
+            somaTotal = (valor - soma);                              //terminar
         } else if (500 > valor && valor >= 200) {
             soma = (valor * 0.06);
             somaTotal = (valor - soma);
