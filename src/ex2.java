@@ -16,7 +16,7 @@ public class ex2 {
 
             Scanner b = new Scanner(System.in);
             System.out.print("Valor venal: ");
-            double input2 = b.nextInt();
+            double input2 = b.nextInt();        //2 opção arrays
 
             Scanner c = new Scanner(System.in);
             System.out.print("Valor da 2 transação: ");
