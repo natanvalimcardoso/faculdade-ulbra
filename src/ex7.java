@@ -11,7 +11,7 @@ public class ex7 {
             Scanner a = new Scanner(System.in);
             System.out.print("Digite o seu email: ");
             String email = a.nextLine();
-
+//conta
             Scanner c = new Scanner(System.in);
             System.out.print("Digite a sua senha: ");
             String senha = c.nextLine();
