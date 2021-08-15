@@ -8,9 +8,9 @@ public class ex8 {
         Scanner a = new Scanner(System.in);
         System.out.print("Digite o primeiro multiplicador: ");
         int primeiro = a.nextInt();
-
+    
         Scanner b = new Scanner(System.in);
-        System.out.print("Digite o segundo multiplicador: ");
+        System.out.print("Digite o segundo multiplicador: ");       // tabuada
         int multiplicador2 = b.nextInt();
 
         for (int i = 1; i < 10; i++) {
