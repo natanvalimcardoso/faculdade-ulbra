@@ -21,7 +21,7 @@ public class ex6 {
 
         for (int i = 0; i < resist.length; i++) {
             if(resist[i] > valorMaior){
-                valorMaior = resist[i];
+                valorMaior = resist[i];             //primeiro ussor arrays
             }
             if(resist[i] < valorMenor){
                 valorMenor = resist[i];
