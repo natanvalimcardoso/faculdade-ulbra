@@ -5,43 +5,30 @@ public class ex6 {
 
         int[] resist = new int[4];
         var soma = 0;
-        var valorMenor = 0;
-        var valorMaior = 0;
+        int valorMenor = Integer.MAX_VALUE;
+        int valorMaior = 0;
+
+        resist = new int[4];
 
         for (int i = 0; i < 4; i++) {
             Scanner a = new Scanner(System.in);
             System.out.print("Valores da resistencia: ");
             int input = a.nextInt();
+            resist[i] = input;
+        }
 
-            resist = new int[4];
-            resist[0] = input;
-            resist[1] = input;
-            resist[2] = input;
-            resist[3] = input;
+        soma = (resist[0] + resist[1] + resist[2] + resist[3]);
 
-            soma = (resist[0] + resist[1] + resist[2] + resist[3]);
-
-            if (resist[0] > resist[1] && resist[0] > resist[2] && resist[0] > resist[3]) {
-                valorMaior = input;
-            } else if (resist[1] > resist[0] && resist[1] > resist[2] && resist[1] > resist[3]) {
-                valorMaior = input;
-            } else if (resist[2] > resist[0] && resist[2] > resist[1] && resist[2] > resist[3]) {
-                valorMaior = input;
-            } else {
-                valorMaior = input;
+        for (int i = 0; i < resist.length; i++) {
+            if(resist[i] > valorMaior){
+                valorMaior = resist[i];
             }
-
-            if (resist[0] < resist[1] && resist[0] < resist[2] && resist[0] < resist[3]) {
-                valorMenor = input;
-            } else if (resist[1] < resist[0] && resist[1] < resist[2] && resist[1] < resist[3]) {
-                valorMenor = input;
-            } else if (resist[2] < resist[0] && resist[2] < resist[1] && resist[2] < resist[3]) {
-                valorMenor = input;
-            } else {
-                valorMenor = input;
+            if(resist[i] < valorMenor){
+                valorMenor = resist[i];
             }
+            
 
         }
-        System.out.println("A resistencia equivalente é de: " + soma + "Já a maior resistencia é a: " + valorMaior + " E a resistencia menor é a: " +valorMenor );
+        System.out.println("A resistencia equivalente é de: " + soma + " Já a maior resistencia é a: " + valorMaior + " E a resistencia menor é a: " + valorMenor);
     }
 }
