@@ -13,7 +13,7 @@ public class ex8 {
 =======
     
         Scanner b = new Scanner(System.in);
-        System.out.print("Digite o segundo multiplicador: ");       // tabuada
+        System.out.print("Digite o segundo multiplicador: ");       
         int multiplicador2 = b.nextInt();
 >>>>>>> 6ebba8e07b5ee1f392d18481a4f3a0c328bdaf3b
 
