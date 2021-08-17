@@ -20,7 +20,7 @@ public class ex7 {
                 System.out.println("Você se conectou na sua conta do JAVA! e foram um total de: " +tentativa +" tentativas" );
                 confirmador = true;
             }else{
-            System.out.println("Errou a senha tente novamente ");
+            System.out.println("Errou a senha tente novamente. São 3 tentativas e a quantidade de tentativas:" + tentativa);
             tentativa++;
             }
 

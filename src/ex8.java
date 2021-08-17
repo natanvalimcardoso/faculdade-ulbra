@@ -9,15 +9,12 @@ public class ex8 {
         System.out.print("Digite o primeiro multiplicador: ");
         int primeiro = a.nextInt();
 
-        Scanner b = new Scanner(System.in);
-        System.out.print("Digite o segundo multiplicador: ");
-        int multiplicador2 = b.nextInt();
 
-        for (int i = 1; i < 10; i++) {
-            multiplicador2++;
-            soma = multiplicador2 * primeiro;
+        for (int i = 0; i <= 10; i++) {
             
-            System.out.println(primeiro + "x" + soma);
+            soma = i * primeiro;
+            
+            System.out.println("A multiplicação do numero: " + primeiro + "  x  " + i + " = " + soma );
         }
     }
 }
