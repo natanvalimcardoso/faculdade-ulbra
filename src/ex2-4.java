@@ -7,7 +7,7 @@ public class ex4 {
         System.out.print("Digite uma frase: ");
         String frase = a.nextLine();
 
-        String teste = new StringBuilder(frase).reverse().toString();
+        String teste = new StringBuilder(frase).reverse().toString(); //reversor de frase.
 
         System.out.print(teste.replaceAll(" ", ""));
         
