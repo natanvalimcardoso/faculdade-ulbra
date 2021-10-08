@@ -1,4 +1,4 @@
-public class array3 {
+public class arrayex {
     public static void main(String[] args) {
 
         Double[] numero = new Double[3];

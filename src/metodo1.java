@@ -1,5 +1,3 @@
-package metodos;
-
 public class metodo1 {
     private static Object idioma;
 

@@ -1,8 +1,6 @@
-package metodos;
-
 import java.util.Scanner;
 
-public class metodo1 {
+public class metodoMes {
     static String[] mes = { "janeiro",  "março",  "maio"};
     static String[] mesIngles = {"February", "April", "June" };
 

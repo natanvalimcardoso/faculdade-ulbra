@@ -1,6 +1,6 @@
-package metodos;
 
-public class metodo {
+
+public class metodoNome {
     String nome = "João";
     String sobrenome = "Santos";
     String nomeCompleto = nome + " " + sobrenome;
@@ -10,7 +10,7 @@ public class metodo {
     }
 
     public static void testar() {
-        metodo m = new metodo();
+        metodoNome m = new metodoNome();
         System.out.println(m.nomeCompleto);
     }
     public static void getMesPorExtenso(int a, int b) {

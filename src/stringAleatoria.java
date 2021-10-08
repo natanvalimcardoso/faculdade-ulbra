@@ -1,5 +1,3 @@
-package metodos;
-
 import java.nio.charset.*;
 import java.util.*;
 

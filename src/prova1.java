@@ -1,6 +1,6 @@
-package ex3;
 
-public class teste2 {
+
+public class prova1 {
     public static void main(String[] args) {
 
         int[] numeros = new int[100];

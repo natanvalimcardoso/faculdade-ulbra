@@ -1,4 +1,4 @@
-public class array7 {
+public class bidimensional {
     public static void main(String[] args) {
 
         int imagem[][] = new int[40][40]; // classe bidimensional

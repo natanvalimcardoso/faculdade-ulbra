@@ -1,8 +1,8 @@
-package array;
+
 
 import java.util.Scanner;
 
-public class array9 {
+public class carros {
     public static void main(String[] args) {
         var teclado = new Scanner(System.in);
         String[] placas = new String[11];
