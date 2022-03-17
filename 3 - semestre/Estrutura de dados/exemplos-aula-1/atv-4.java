@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//ready
 public class Atv-4 {
     public static void main(String[] args) {
         
