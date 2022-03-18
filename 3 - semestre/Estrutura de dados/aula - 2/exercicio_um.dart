@@ -5,7 +5,8 @@ import 'pergunta.dart';
 
 main() {
   List<Aluno> listaAlunos = [];
-  
+  var total = 0.0;
+  var maiorNotaTurma;
 
   listAlunoFuncao<List>(String nome, double nota) {
     //* Ready
@@ -25,17 +26,17 @@ main() {
 
   calcularMedia() {
     //* Ready
-    var soma;
+    var soma = 0.0;
     for (var numberAluno in listaAlunos) {
-      soma += numberAluno.nota / listaAlunos.length;
+      soma = numberAluno.nota / 3; //aqui
     }
     return soma;
   }
 
-  calcularMaiorNotaTurma(double total) { //! Faltou Terminar //Erro que não é aqui
+  calcularMaiorNotaTurma(double total) {
     for (var numberAluno in listaAlunos) {
       if (numberAluno.nota > total) {
-        print('A maior nota da turma éO nome: ${numberAluno.nome} Sua Nota: ${numberAluno.nota}');
+        return ('A maior nota da turma é: ${numberAluno.nome} Sua Nota: ${numberAluno.nota}');
       }
     }
   }
@@ -48,16 +49,14 @@ main() {
     double notaAluno = pergunta(0.0);
 
     listAlunoFuncao(nomeAluno, notaAluno);
+
+    total = calcularMedia();
+    maiorNotaTurma = calcularMaiorNotaTurma(total);
   };
 
-  var total = calcularMedia();
-  var maiorNotaTurma = calcularMaiorNotaTurma(total);
-
-  
   mostrarAluno();
-  print('A média da turma é: $total');
-  print(maiorNotaTurma);
-  
+  print('\n A média da turma é: $total \n');
+  print('$maiorNotaTurma ');
 }
 
 class Aluno {
