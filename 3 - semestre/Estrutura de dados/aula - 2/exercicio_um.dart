@@ -28,7 +28,7 @@ main() {
     //* Ready
     var soma = 0.0;
     for (var numberAluno in listaAlunos) {
-      soma = numberAluno.nota / 3; //aqui
+      soma = numberAluno.nota / 3; //O problema está aqui
     }
     return soma;
   }
