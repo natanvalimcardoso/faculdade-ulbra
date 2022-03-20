@@ -18,7 +18,6 @@ main() {
   }
 
   mostrarAluno() {
-    //* Ready
     for (var numberAluno in listaAlunos) {
       print('O nome: ${numberAluno.nome} Sua Nota: ${numberAluno.nota}');
     }
