@@ -37,7 +37,7 @@ main() {
     for (var numberAluno in listaAlunos) {                                 // Soma todas nota dos alunos e divide
       soma += numberAluno.nota; //aqui
     }
-    return soma / 3;
+    return soma / listaAlunos.length;
   }
 
  //////////////////////////////////////////////////////////////*
