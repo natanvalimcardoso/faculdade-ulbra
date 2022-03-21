@@ -1,15 +1,17 @@
 // Escreva uma classe que Leia 3 nomes e notas de uma turma, calcula e
 // exibe a média das notas da turma e em seguida exibe a relação de nomes
 // cuja nota é superior a esta média. Utilize vetores para armazenar as notas.
+import 'dart:io';
+
 import 'pergunta.dart';
 
 main() {
   List<Aluno> listaAlunos = [];
+  List listaMaiorNota = [];
   var total = 0.0;
   var maiorNotaTurma;
 
   listAlunoFuncao<List>(String nome, double nota) {
-    //* Ready
     var novoAluno = Aluno(
       nome: nome,
       nota: nota,
@@ -17,46 +19,61 @@ main() {
     listaAlunos.add(novoAluno);
   }
 
+
+ //////////////////////////////////////////////////////////////*
+ 
   mostrarAluno() {
-    //* Ready
-    for (var numberAluno in listaAlunos) {
+ 
+    for (var numberAluno in listaAlunos) {                                  // Printa os alunos e as notas
       print('O nome: ${numberAluno.nome} Sua Nota: ${numberAluno.nota}');
     }
   }
 
+//////////////////////////////////////////////////////////////*
+
   calcularMedia() {
     //* Ready
     var soma = 0.0;
-    for (var numberAluno in listaAlunos) {
-      soma = numberAluno.nota / 3; //aqui
+    for (var numberAluno in listaAlunos) {                                 // Soma todas nota dos alunos e divide
+      soma += numberAluno.nota; //aqui
     }
-    return soma;
+    return soma / 3;
   }
 
+ //////////////////////////////////////////////////////////////*
+ 
   calcularMaiorNotaTurma(double total) {
-    for (var numberAluno in listaAlunos) {
-      if (numberAluno.nota > total) {
-        return ('A maior nota da turma é: ${numberAluno.nome} Sua Nota: ${numberAluno.nota}');
+    for (var numberAluno in listaAlunos) {        
+      if (numberAluno.nota > total) {                                     // Calcula qual aluno teve a nota maior que a média
+         listaMaiorNota.add(numberAluno);
       }
     }
+    for (var numberAluno in listaMaiorNota){
+      print('As maiores notas foram: nome: ${numberAluno.nome} nota: ${numberAluno.nota}');
+    }
   }
 
+ //////////////////////////////////////////////////////////////*
+
   for (int i = 0; i < 3; i++) {
-    print('Digite o nome do aluno: ');
+    stdout.write('Digite o nome do aluno: ');
     String nomeAluno = pergunta('');
 
-    print('Digite a nota do aluno: ');
+    stdout.write('Digite a nota do aluno: ');
     double notaAluno = pergunta(0.0);
 
     listAlunoFuncao(nomeAluno, notaAluno);
-
     total = calcularMedia();
-    maiorNotaTurma = calcularMaiorNotaTurma(total);
+    
   };
 
+    
+
+  print('\n');
   mostrarAluno();
-  print('\n A média da turma é: $total \n');
-  print('$maiorNotaTurma ');
+  print('\nA média da turma é: $total');
+  calcularMaiorNotaTurma(total);
+  
 }
 
 class Aluno {

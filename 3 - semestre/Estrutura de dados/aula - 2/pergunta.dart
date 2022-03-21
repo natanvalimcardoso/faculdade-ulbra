@@ -2,6 +2,7 @@ import 'dart:io';
 
 pergunta(Object valor) {
   var entrada = stdin.readLineSync();
+  
   if (valor is int) {
     int chamado = int.parse(entrada!);
     valor = chamado;
