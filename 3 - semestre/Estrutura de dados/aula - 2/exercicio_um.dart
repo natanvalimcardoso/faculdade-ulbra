@@ -23,8 +23,12 @@ main() {
  //////////////////////////////////////////////////////////////*
  
   mostrarAluno() {
+<<<<<<< HEAD
  
     for (var numberAluno in listaAlunos) {                                  // Printa os alunos e as notas
+=======
+    for (var numberAluno in listaAlunos) {
+>>>>>>> bcea486e43dea0456d76365ff692a0f848bcfe4a
       print('O nome: ${numberAluno.nome} Sua Nota: ${numberAluno.nota}');
     }
   }
@@ -34,8 +38,13 @@ main() {
   calcularMedia() {
     //* Ready
     var soma = 0.0;
+<<<<<<< HEAD
     for (var numberAluno in listaAlunos) {                                 // Soma todas nota dos alunos e divide
       soma += numberAluno.nota; //aqui
+=======
+    for (var numberAluno in listaAlunos) {
+      soma = numberAluno.nota / 3; //O problema está aqui
+>>>>>>> bcea486e43dea0456d76365ff692a0f848bcfe4a
     }
     return soma / 3;
   }
