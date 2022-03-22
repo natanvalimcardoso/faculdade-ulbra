@@ -3,14 +3,13 @@
 // outro conjunto de notas (menores do que a média).Utilize vetores
 
 import 'dart:io';
-
 import 'pergunta.dart';
 
 main() {
   List<Alunos> listaAlunos = [];
   List listaMaiorNota = [];
   List listaMenorNota = [];
-  var total = 0.0;
+  var total;
 
   listAlunoFuncao<List>(String nome, double nota) {
     var novoAluno = Alunos(

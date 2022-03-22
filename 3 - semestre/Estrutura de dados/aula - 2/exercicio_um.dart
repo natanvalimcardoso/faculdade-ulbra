@@ -8,8 +8,8 @@ import 'pergunta.dart';
 main() {
   List<Aluno> listaAlunos = [];
   List listaMaiorNota = [];
-  var total = 0.0;
-  var maiorNotaTurma;
+  var total;
+
 
   listAlunoFuncao<List>(String nome, double nota) {
     var novoAluno = Aluno(
