@@ -13,11 +13,11 @@ public class ex7 {
                 matrix[i][j] = random.nextInt(10);
             }
         }
-        
+
         for (int i = 0; i < matrix.length; i++) {
             int j = 0;
             for (j = 0; j < matrix.length; j++) {
-                System.out.print(matrix[i][j]+", ");
+                System.out.print(matrix[i][j] + ", ");
             }
         }
     }
