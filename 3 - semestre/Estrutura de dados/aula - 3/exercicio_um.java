@@ -13,13 +13,25 @@ public class exercicio_um {
             for (int j = 0; j < notas[i].length; j++) {
                 System.out.print("Digite a nota do aluno " + (i + 1) + " na prova " + (j + 1) + ": ");
                 notas[i][j] = Integer.parseInt(System.console().readLine());
-                soma += notas[i][j];
-                
+                if (notas[i][j] < 0 || notas[i][j] > 10) {
+                    System.out.println("Nota inválida!");
+                    System.exit(0);
+                }
+                if (notas[i][j] <= 10 && notas[i][j] > 0) {
+                    soma += notas[i][j];
+                }
+
             }
-            System.out.println("A média do aluno " + (i + 1) + " é: " + (soma / notas.length));
+            System.out.println("\nA média do aluno " + (i + 1) + " é: " + (soma / notas.length));
+
+            if (soma / notas.length > 7) {
+                System.out.println("O aluno " + (i + 1) + " está aprovado!\n");
+            } else if (soma / notas.length > 6) {
+                System.out.println("O aluno " + (i + 1) + " está na média\n");
+            } else {
+                System.out.println("O aluno " + (i + 1) + " está reprovado!\n");
+            }
             soma = 0;
-            } 
-           
         }
     }
-    
+}
