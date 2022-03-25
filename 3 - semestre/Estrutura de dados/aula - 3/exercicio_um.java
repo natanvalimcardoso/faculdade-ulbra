@@ -17,9 +17,8 @@ public class exercicio_um {
                     System.out.println("Nota inválida!");
                     System.exit(0);
                 }
-                if (notas[i][j] <= 10 && notas[i][j] > 0) {
-                    soma += notas[i][j];
-                }
+
+                soma += notas[i][j];
 
             }
             System.out.println("\nA média do aluno " + (i + 1) + " é: " + (soma / notas.length));
