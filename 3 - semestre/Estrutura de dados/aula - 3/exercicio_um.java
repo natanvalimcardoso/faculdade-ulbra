@@ -6,7 +6,7 @@ Importante deve ser validado que as notas aceitas sejam de 0 a 10.*/
 public class exercicio_um {
     public static void main(String[] args) {
 
-        int notas[][] = new int[3][3]; // classe bidimensional
+        int notas[][] = new int[3][3];
         int soma = 0;
 
         for (int i = 0; i < notas.length; i++) {
