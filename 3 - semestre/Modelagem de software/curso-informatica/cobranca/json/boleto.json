@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "valor": 0.0,
+    "cobranca": {
+      "id": 1,
+      "valor": 0.0,
+      "cliente": {},
+      "boleto": {}
+    },
+    "quitado": true
+  },
+  {
+    "id": 2,
+    "valor": 0.0,
+    "cobranca": {},
+    "quitado": false
+  },
+  {
+    "id": 3,
+    "valor": 0.0,
+    "cobranca": {},
+    "quitado": false
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "date": "2021-09-04T12:30:00+03:00",
+    "aluno": {
+      "id": 1,
+      "nome": "Douglas",
+      "telefone": "51900000000"
+    },
+    "turma": {
+      "id": 1,
+      "minimoAlunos": 20,
+      "curso": {
+        "id": 1,
+        "nome": "x"
+      }
+    }
+  }
+]

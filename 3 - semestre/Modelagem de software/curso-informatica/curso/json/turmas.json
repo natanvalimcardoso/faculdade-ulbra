@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "alunos": [
+      {
+        "id": 1,
+        "nome": "Douglas",
+        "telefone": "51900000000",
+        "matriculas": []
+      }
+    ],
+    "minimoAlunos": 20
+  },
+  {
+    "id": 2,
+    "alunos": [],
+    "minimoAlunos": 20
+  },
+  {
+    "id": 3,
+    "alunos": [],
+    "minimoAlunos": 20
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nome": "Douglas",
+    "telefone": "51900000000",
+    "cpf": "00000000000",
+    "cobrancas": [
+      {
+        "id": 1,
+        "valor": 0.0,
+        "cliente": {},
+        "boleto": {}
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "Aline",
+    "telefone": "51900000000",
+    "cpf": "00000000000",
+    "cobrancas": []
+  },
+  {
+    "id": 3,
+    "nome": "Jonh",
+    "telefone": "51900000000",
+    "cpf": "00000000000",
+    "cobrancas": []
+  }
+]

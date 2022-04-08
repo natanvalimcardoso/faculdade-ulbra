@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nome": "Douglas",
+    "telefone": "51900000000",
+    "matriculas": [
+      {
+        "id": 21,
+        "date": "2021-09-05T12:30:00+03:00",
+        "aluno": {}
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "Aline",
+    "telefone": "51900000000",
+    "matriculas": []
+  },
+  {
+    "id": 3,
+    "nome": "Jonh",
+    "telefone": "51900000000",
+    "matriculas": []
+  }
+]
