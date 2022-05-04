@@ -3,7 +3,8 @@ public class Lista {
     Elemento inicio;
     int quantidade;
     Elemento fim;
-
+    Elemento dados = inicio;
+    
     public void esvaziar() {
         inicio = null;
         quantidade = 0;
@@ -37,11 +38,19 @@ public class Lista {
     }
 
     public void mostrarLista() {
-        Elemento dados = inicio;
-        while (dados != null) {
-            System.out.println(dados.dado);
-            dados = dados.prox;
+        
+     for (Elemento e = inicio; e != null; e = e.prox) {
+            System.out.println(e.dado);
         }
+        
+    }
+
+    public void mostrarPrimeiro() {
+        System.out.println(inicio.dado);
+    }
+
+    public void mostrarUltimo() {
+        System.out.println(fim.dado);
     }
 
 }
