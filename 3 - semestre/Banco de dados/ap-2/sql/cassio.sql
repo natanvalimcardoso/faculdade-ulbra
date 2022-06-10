@@ -4,7 +4,7 @@ CREATE TABLE `agenda` (
   `dia_semana` varchar(45) DEFAULT NULL,
   `aluno_id_aluno` int(11) NOT NULL,
   `professor_id_professor` int(11) NOT NULL,
-  PRIMARY KEY (`id_agenda`),
+  PRIMARY KEY (`id_agenda`),,
   KEY `fk_agenda_aluno1_idx` (`aluno_id_aluno`),
   KEY `fk_agenda_professor1_idx` (`professor_id_professor`),
   CONSTRAINT `fk_agenda_aluno1` FOREIGN KEY (`aluno_id_aluno`) REFERENCES `aluno` (`id_aluno`) ON DELETE NO ACTION ON UPDATE NO ACTION,
@@ -250,3 +250,5 @@ SET
 END IF;
 
 END;
+
+here
