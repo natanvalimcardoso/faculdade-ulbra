@@ -1,4 +1,4 @@
-CREATE TABLE `agenda` (
+CREATE TABLE `agenda` ( //pull
   `id_agenda` int(11) NOT NULL,
   `horario` varchar(45) NOT NULL,
   `dia_semana` varchar(45) DEFAULT NULL,
