@@ -29,8 +29,7 @@ class HomeController {
   }
 
 
-  clearText({required TextEditingController cotacaoController, required TextEditingController valueController}) {
-    cotacaoController.clear();
+  clearText({required TextEditingController valueController}) {
     valueController.clear();
   }
 }

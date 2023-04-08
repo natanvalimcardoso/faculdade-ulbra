@@ -25,6 +25,14 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            controller.result = 0;
+          });
+        },
+        child: const Icon(Icons.delete),
+      ),
       appBar: AppBar(
         title: const Text('Conversor de Moedas'),
         actions: [
@@ -49,10 +57,7 @@ class _HomePageState extends State<HomePage> {
           key: _formKey,
           child: Column(
             children: [
-              const SizedBox(height: 20),
-              Text('Cotação digitada: R\$ ${_cotacaoController.text}'),
-              Text('Valor a ser convertido: R\$ ${_valueController.text}'),
-              const SizedBox(height: 20),
+              const SizedBox(height: 40),
               SizedBox(
                 width: MediaQuery.of(context).size.width * 0.7,
                 child: Text(
@@ -77,6 +82,7 @@ class _HomePageState extends State<HomePage> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: TextFormInput(
+                  textInputAction: TextInputAction.done,
                   validator: Validatorless.multiple([
                     Validatorless.required('É necessário digitar o valor a ser convertido'),
                   ]),
@@ -99,10 +105,10 @@ class _HomePageState extends State<HomePage> {
                           valueController: _valueController.text,
                         );
                         controller.clearText(
-                          cotacaoController: _cotacaoController,
                           valueController: _valueController,
                         );
                       }
+                      FocusScope.of(context).unfocus();
                     },
                     style: ElevatedButton.styleFrom(),
                     child: const Text('Converter Dolar para Real'),
@@ -119,10 +125,10 @@ class _HomePageState extends State<HomePage> {
                           valueController: _valueController.text,
                         );
                         controller.clearText(
-                          cotacaoController: _cotacaoController,
                           valueController: _valueController,
                         );
                       }
+                      FocusScope.of(context).unfocus();
                     },
                     child: const Text('Real para Dolar'),
                   ),
@@ -142,9 +148,9 @@ class _HomePageState extends State<HomePage> {
                           valueController: _valueController.text,
                         );
                         controller.clearText(
-                          cotacaoController: _cotacaoController,
                           valueController: _valueController,
                         );
+                        FocusScope.of(context).unfocus();
                       }
                     },
                     child: const Text(
