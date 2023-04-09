@@ -26,35 +26,35 @@ class HomePage extends StatelessWidget {
                     child: const Icon(Icons.add),
                     label: 'Stack',
                     onTap: () {
-                      print('Adicionar');
+                      Navigator.pushNamed(context, '/stack');
                     },
                   ),
                   SpeedDialChild(
                     child: const Icon(Icons.edit),
                     label: 'AnimatedCointainer',
                     onTap: () {
-                      print('Adicionar');
+                      Navigator.pushNamed(context, '/animatedContainer');
                     },
                   ),
                   SpeedDialChild(
                     child: const Icon(Icons.delete),
                     label: 'Positioned',
                     onTap: () {
-                      print('Adicionar');
+                      Navigator.pushNamed(context, '/positioned');
                     },
                   ),
                   SpeedDialChild(
                     child: const Icon(Icons.save),
                     label: 'Spacer',
                     onTap: () {
-                      print('Adicionar');
+                      Navigator.pushNamed(context, '/spacer');
                     },
                   ),
                   SpeedDialChild(
                     child: const Icon(Icons.cancel),
                     label: 'Center',
                     onTap: () {
-                      print('Adicionar');
+                      Navigator.pushNamed(context, '/center');
                     },
                   ),
                 ],
