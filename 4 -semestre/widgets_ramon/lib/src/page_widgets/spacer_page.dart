@@ -1,14 +1,72 @@
 import 'package:flutter/material.dart';
 
 class SpacerPage extends StatelessWidget {
+  const SpacerPage({Key? key}) : super(key: key);
 
-  const SpacerPage({ Key? key }) : super(key: key);
+  // Exemplo valor flex é definido como 3. Isso significa que, se houver espaço vazio disponível em um Row ou Column, o Spacer deve ocupar três vezes mais espaço do que um widget com flex: 1,
 
-   @override
-   Widget build(BuildContext context) {
-       return Scaffold(
-           appBar: AppBar(title: const Text('Spacer'),),
-           body: Container(),
-       );
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Spacer'),
+        centerTitle: true,
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Row(
+            children: [
+              const Spacer(),
+              Container(
+                color: Colors.red,
+                height: 100,
+                width: 100,
+              ),
+              const Spacer(flex: 3,),
+              Container(
+                color: Colors.green,
+                height: 100,
+                width: 100,
+              ),
+              const Spacer(),
+              Container(
+                color: Colors.blue,
+                height: 100,
+                width: 100,
+              ),
+            ],
+          ),
+          const Spacer(),
+          const Divider(
+            color: Colors.black,
+            thickness: 2,
+          ),
+          const Spacer(),
+          Container(
+            color: Colors.red,
+            height: 100,
+            width: 100,
+          ),
+          const Spacer(),
+          Container(
+            color: Colors.red,
+            height: 100,
+            width: 100,
+          ),
+          Container(
+            color: Colors.green,
+            height: 100,
+            width: 100,
+          ),
+          const Spacer(),
+          Container(
+            color: Colors.blue,
+            height: 100,
+            width: 100,
+          ),
+        ],
+      ),
+    );
   }
 }

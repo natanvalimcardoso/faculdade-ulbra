@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 
 class AnimatedContainerPage extends StatelessWidget {
+  const AnimatedContainerPage({Key? key}) : super(key: key);
 
-  const AnimatedContainerPage({ Key? key }) : super(key: key);
-
-   @override
-   Widget build(BuildContext context) {
-       return Scaffold(
-           appBar: AppBar(title: const Text('Animated Container'),),
-           body: Container(),
-       );
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Animated Container'),
+        centerTitle: true,
+      ),
+      body: Container(),
+    );
   }
 }
