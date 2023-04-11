@@ -10,7 +10,36 @@ class StackPage extends StatelessWidget {
         title: const Text('Stack'),
         centerTitle: true,
       ),
-      body: Container(),
+      body: SizedBox(
+        width: double.infinity,
+        height: double.infinity,
+        child: Stack(
+          // alignment: Alignment.center,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Container(
+                color: Colors.blue,
+                width: 100,
+                height: 100,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                color: Colors.red,
+                width: 100,
+                height: 100,
+              ),
+            ),
+            Container(
+              color: Colors.yellow,
+              width: 100,
+              height: 100,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

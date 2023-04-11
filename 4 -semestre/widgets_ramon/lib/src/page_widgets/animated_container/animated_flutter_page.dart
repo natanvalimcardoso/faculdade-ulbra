@@ -21,14 +21,12 @@ class _AnimatedFlutterPageState extends State<AnimatedFlutterPage> {
   Color colorThree = Colors.blue;
 
   double heightOne = 10;
-  double heightTwo = 30;
+  double heightTwo = 200;
   double heightThree = 30;
 
   double widthOne = 30;
   double widthTwo = 150;
   double widthThree = 160;
-
-  BoxShape shapeOne = BoxShape.circle;
 
   void animationClickPositioned() {
     setState(() {
@@ -51,11 +49,9 @@ class _AnimatedFlutterPageState extends State<AnimatedFlutterPage> {
         widthOne = 30;
         widthTwo = 60;
         widthThree = 50;
-        shapeOne = BoxShape.rectangle;
       } else {
-        shapeOne = BoxShape.circle;
         heightOne = 10;
-        heightTwo = 30;
+        heightTwo = 200;
         heightThree = 30;
 
         widthOne = 30;
@@ -89,7 +85,7 @@ class _AnimatedFlutterPageState extends State<AnimatedFlutterPage> {
         child: Stack(
           children: [
             AnimatedPositioned(
-              curve: Curves.bounceOut,
+              curve:  Curves.bounceOut,
               duration: const Duration(seconds: 4),
               left: leftOne,
               top: topOne,
@@ -109,7 +105,7 @@ class _AnimatedFlutterPageState extends State<AnimatedFlutterPage> {
                 duration: const Duration(seconds: 4),
                 height: heightTwo,
                 width: widthTwo,
-                decoration: BoxDecoration(color: colorTwo, shape: shapeOne),
+                color: colorTwo,
               ),
             ),
             AnimatedPositioned(
