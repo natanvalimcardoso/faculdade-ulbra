@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 class CenterPage extends StatelessWidget {
 //* Facilidade de uso
 
-//* Flexibilidade
-
 //* Personalização: Width e Height
 
 //* Responsividade
@@ -19,7 +17,6 @@ class CenterPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Center Page'),
         centerTitle: true,
-        //button
         actions: [
           IconButton(
             onPressed: () {

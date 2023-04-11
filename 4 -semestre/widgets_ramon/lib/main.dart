@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:widgets_ramon/src/page_widgets/center/center_dois_page.dart';
-import 'src/home_page.dart';
-import 'src/page_widgets/animated_container_page.dart';
 
+import 'src/home_page.dart';
+import 'src/page_widgets/animated_container/animated_container_page.dart';
+import 'src/page_widgets/animated_container/animated_flutter_page.dart';
+import 'src/page_widgets/center/center_dois_page.dart';
 import 'src/page_widgets/center/center_page.dart';
-import 'src/page_widgets/positioned_page.dart';
-import 'src/page_widgets/spacer_page.dart';
-import 'src/page_widgets/stack_page.dart';
+import 'src/page_widgets/positioned/positioned_page.dart';
+import 'src/page_widgets/spacer/spacer_page.dart';
+import 'src/page_widgets/stack_widget/stack_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +28,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const HomePage(),
         '/stack': (context) => const StackPage(),
-        '/animatedContainer': (context) => const AnimatedContainerPage(),
+        '/animatedContainer': (context) =>  const AnimatedContainerPage(),
+        '/animatedFlutter': (context) =>  const AnimatedFlutterPage(),
         '/positioned': (context) => const PositionedPage(),
         '/spacer': (context) => const SpacerPage(),
         '/center': (context) => const CenterPage(),
