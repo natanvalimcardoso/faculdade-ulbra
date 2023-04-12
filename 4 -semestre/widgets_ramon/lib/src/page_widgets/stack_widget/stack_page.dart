@@ -14,7 +14,7 @@ class StackPage extends StatelessWidget {
         width: double.infinity,
         height: double.infinity,
         child: Stack(
-          // alignment: Alignment.center,
+          //  alignment: Alignment.center,
           children: [
             Padding(
               padding: const EdgeInsets.all(16.0),

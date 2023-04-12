@@ -34,13 +34,12 @@ class SpacerPage extends StatelessWidget {
                 height: 50,
                 width: 50,
               ),
-               const Spacer(),
+              const Spacer(),
               Container(
-                color: Colors.yellow,
+                color: Colors.green,
                 height: 50,
                 width: 50,
               ),
-               const Spacer(),
               
             ],
           ),

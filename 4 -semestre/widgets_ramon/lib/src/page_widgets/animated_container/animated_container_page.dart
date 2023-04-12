@@ -52,8 +52,13 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
+            Container(
+              color: Colors.blue,
+              width: sizeWidthOne,
+              height: 100,
+            ),
             AnimatedContainer(
-              duration: const Duration(seconds: 2),
+              duration: const Duration(seconds: 4),
               curve: Curves.fastOutSlowIn,
               color: Colors.blue,
               width: sizeWidthOne,
@@ -66,6 +71,7 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
               height: 100,
             ),
             AnimatedContainer(
+              curve: Curves.easeInBack,
               duration: const Duration(seconds: 4),
               color: colorTwo,
               width: sizeWidthOne,

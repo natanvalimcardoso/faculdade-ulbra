@@ -13,7 +13,7 @@ class PositionedPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // var size = MediaQuery.of(context).size;
+    var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         title: const Text('Positioned Page'),
@@ -30,6 +30,7 @@ class PositionedPage extends StatelessWidget {
               height: 100,
             ),
             Positioned(
+              // top: size.height * 0.5,
               top: 10,
               left: 10,
               child: Container(
